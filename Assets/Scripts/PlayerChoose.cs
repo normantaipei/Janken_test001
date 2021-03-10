@@ -3,21 +3,26 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using System.IO.Ports;
+using System;
+using System.Threading;
 
 public class PlayerChoose : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     public GameObject character;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+       
     }
 
     // Update is called once per frame
     void Update()
     {
-        
     }
+    
+
     public void OnPointerEnter(PointerEventData eventData)    //滑鼠移入
     {
         character.SetActive(true);
