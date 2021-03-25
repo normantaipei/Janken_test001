@@ -26,6 +26,7 @@ public class Fight : MonoBehaviour
     {
         GM.mode = 3;
         UIManager.GetComponent<UIManager>().JankenChoose(choose);
+        //1.rock 2.paper 3.scisser
         //JankenChoose(choose);
         if (choose == 1)
         {
